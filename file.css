@@ -1,0 +1,313 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding-top: 8px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    padding: 24px;
+}
+
+.site-header {
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.food-munch-logo {
+    width: 80px;
+    height: 70px;
+}
+
+/* mobile */
+.nav-links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.nav-links li a {
+    padding: 8px 12px;
+    color: #323f4b;
+    font-size: 14px;
+}
+
+/* tablet + desktop */
+@media (min-width: 768px) {
+    .nav-links {
+        width: auto;
+        margin-left: auto;
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+}
+
+.banner {
+    height: 100vh;
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.banner p {
+    color: #f5f7fa;
+    font-size: 24px;
+    margin: 12px 0 24px;
+}
+
+.banner-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.custom-button {
+    background: #d0b200;
+    color: #ffffff;
+    border: none;
+}
+
+.custom-outline-button {
+    background: transparent;
+    color: #d0b200;
+    border: 1px solid #d0b200;
+}
+
+.custom-button,
+.custom-outline-button {
+    width: 130px;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.why-choose-us {
+    background: #f9fbfe;
+}
+
+.wcu-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.wcu-section h1 {
+    font-size: 24px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.feature-card {
+    width: 100%;
+    max-width: 320px;
+    background: #ffffff;
+    border: 1px solid #e5eaf4;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+}
+
+.feature-card img {
+    margin: auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.menu-card {
+    width: 100%;
+    max-width: 260px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 1px 1px 1px #00000026;
+}
+
+.menu-card h1 {
+    margin-top: 16px;
+    color: #323f4b;
+    font-size: 20px;
+}
+
+.menu-card a {
+    color: #d0b200;
+    font-weight: 500;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-block img {
+    width: 270px;
+}
+
+@media (min-width: 768px) {
+    .two-column {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .two-column.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.payment-icons img {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.delivery-payment {
+    padding: 24px;
+}
+
+.image-block img {
+    width: 100%;
+}
+
+.content-block {
+    text-align: center;
+}
+
+.custom-button {
+    background: #d0b200;
+    color: #ffffff;
+    border: none;
+}
+
+.custom-button {
+    width: 130px;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.two-column.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (min-width: 768px) {
+    .two-column {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .two-column.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.follow-us {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.social-icons span {
+    width: 80px;
+    height: 80px;
+    background: lightpink;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer {
+    background: #0d2436;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content p,
+.footer-content address {
+    color: #959ead;
+    font-size: 14px;
+}
+
+.footer-content address {
+    font-style: normal;
+}
